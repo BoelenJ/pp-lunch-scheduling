@@ -22,6 +22,8 @@ The model-driven app allows the organizer to create a lunch. To create a lunch, 
 #### Creating groups
 Using an AI prompt in AI Builder and the configuration you did in step one, the tool will automatically suggest diverse groups of participants and assign them to a timeslot. After creating groups, the organizer must evaluate the groups in the model driven app (and potentially modify if necessary). When you are satisfied with the groups, you can continue by going to the "Sending Invitations" step in the business process flow.
 
+> Note: the AI prompt feature is not available in all regions yet, currently the solution was built in the US region. Make sure your region supports this feature when importing the solution.
+
 #### Managing invitations
 After the above steps, the app automates the entire process of managing invitations. This includes the following functionality:
 - Initial invitations are sent to the participants via an adaptive card. This gives them the option to 1) accept, 2) decline, or 3) request a new timeslot. When accepting, an outlook calendar event will automatically be forwarded to the participant with their status as accepted. When requesting a new timeslot, the tool will try to find a suitable timeslot, if found, a new invitation is sent. If not found, this request ends up in a manual queue for the organizer.
